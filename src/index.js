@@ -1,4 +1,5 @@
 const $ = require('jquery');
+// const {deleteMovie} = require('./api.js');
 /**
  * es6 modules and imports
  */
@@ -18,10 +19,12 @@ getMovies().then((movies) => {
     movies.forEach(({title, rating, year, genre, id}) => {
         console.log(`id#${id} - ${title} - rating: ${rating}`);
         $('#insertProducts').append(`<tr>
-                      <td scope="row">${title}</td>
+                      <td scope="row">${id}</td>
+                      <td> ${title} </td>
                       <td> ${rating} </td>
                       <td> ${genre}</td>
                       <td> ${year}</td>
+                      <td><a href="#" class="deleteMovieButton" data-id="${id}"><img class="trash-icon" src="img/cute-trash-can.png" alt="cute lil trashcan"></a></td>
                       </tr>`);
     });
 }).catch((error) => {
@@ -55,10 +58,12 @@ $('#newMovieButton').click(function (event) {
         movies.forEach(({title, rating, year, genre, id}) => {
             console.log(`id#${id} - ${title} - rating: ${rating}`);
             $('#insertProducts').append(`<tr>
-                      <td scope="row">${title}</td>
+                      <td scope="row"> ${id} </td>
+                      <td >${title}</td>
                       <td> ${rating} </td>
                       <td> ${genre}</td>
                       <td> ${year}</td>
+                      <td><i class="fas fa-dumpster-fire"></i></td>
                       </tr>`);
         });
     }).catch((error) => {
@@ -99,6 +104,7 @@ $('#editMovieButton').click(function () {
         movies.forEach(({title, rating, year, genre, id}) => {
             console.log(`id#${id} - ${title} - rating: ${rating}`);
             $('#insertProducts').append(`<tr>
+                      <td scope="row"> ${id} </td>
                       <td>${title}</td>
                       <td> ${rating} </td>
                       <td> ${genre}</td>
@@ -109,6 +115,18 @@ $('#editMovieButton').click(function () {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
         console.log(error);
     });
+});
+
+// //Delete movie button
+
+$(document).on("click", '.deleteMovieButton', function () {
+console.log('test')
+    $.ajax({
+        url: `/api/movies/${$(this).attr('data-id')}`,
+        type: "DELETE",
+        dataType: "json",
+    })
+    .done(function(data){console.log(data)});
 });
 
 // Binds Rating to Star Selection
@@ -127,6 +145,7 @@ function bindStarEvents() {
         });
     });
 }
+
 bindStarEvents();
 
 function editStarEvents() {
@@ -144,4 +163,5 @@ function editStarEvents() {
         });
     });
 }
+
 editStarEvents();

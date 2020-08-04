@@ -1,13 +1,6 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
-      "rating": "4",
-      "genre": "Elderly",
-      "year": "Girl idk, 1600's?",
-      "id": 1
-    },
-    {
       "title": "Star Wars: A New Hope",
       "rating": "5",
       "genre": "Iconic",
@@ -55,6 +48,13 @@
       "genre": "Horror",
       "year": "1960",
       "id": 8
+    },
+    {
+      "title": "Moulin Rouge",
+      "rating": "4",
+      "genre": "Sad Girl Times",
+      "year": "2001",
+      "id": 9
     }
   ]
 }
