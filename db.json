@@ -29,11 +29,11 @@
       "id": 4
     },
     {
-      "title": "Kill Bill",
+      "id": 5,
+      "title": "Kill Bill Vol.1",
       "rating": "4",
-      "genre": "Uma Thurman",
-      "year": "2002",
-      "id": 5
+      "genre": "Action",
+      "year": "2003"
     },
     {
       "title": "Mean Girls",
@@ -48,6 +48,13 @@
       "genre": "Good soundtrack... amazing soundtrack",
       "year": "2020",
       "id": 7
+    },
+    {
+      "title": "Nemo",
+      "rating": "2",
+      "genre": "Horror",
+      "year": "1960",
+      "id": 8
     }
   ]
 }

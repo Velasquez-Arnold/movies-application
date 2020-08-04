@@ -15,6 +15,14 @@ html, body {
     color: orange;
 }
 
+.editStar {
+    color: gray;
+}
+
+.editStar-active {
+    color: orange;
+}
+
 
 
 

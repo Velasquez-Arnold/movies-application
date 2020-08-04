@@ -68,29 +68,50 @@ $('#newMovieButton').click(function (event) {
 });
 
 //Edit Movie Start
+$('#editMovieButton').click(function () {
+    const movieID = $('#editMovieId');
+    const newMovieName = $('#editMovieName');
+    const newMovieGenre = $('#editMovieGenre');
+    const newMovieYear = $('#editMovieYear');
+    const newMovieRating = $('#edit-rating-hidden');
+    const moviePost = {
+        id: movieID.val(),
+        title: newMovieName.val(),
+        rating: newMovieRating.val(),
+        genre: newMovieGenre.val(),
+        year: newMovieYear.val()
+    };
+    console.log(moviePost);
+    const url = '/api/movies/' + newMovieName.val();
+    const options = {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(moviePost),
+    };
+    fetch(url, options).then(response => response.json());
 
-$('.editMovieButton').click(function() {
-    event.preventDefault();
-    const movieID = $('#editMovieId').val();
-    const newMovieName = $('#editMovieName').val();
-    const newMovieGenre = $('#editMovieGenre').val();
-    const newMovieYear = $('#editMovieYear').val()
-    const newMovieRating = $('#edit-rating-hidden').val();
     $('#insertProducts').empty();
+
+    getMovies().then((movies) => {
+        console.log('Here are all the movies:');
+        movies.forEach(({title, rating, year, genre, id}) => {
+            console.log(`id#${id} - ${title} - rating: ${rating}`);
+            $('#insertProducts').append(`<tr>
+                      <td>${title}</td>
+                      <td> ${rating} </td>
+                      <td> ${genre}</td>
+                      <td> ${year}</td>
+                      </tr>`);
+        });
+    }).catch((error) => {
+        alert('Oh no! Something went wrong.\nCheck the console for details.');
+        console.log(error);
+    });
 });
 
-// Replaces old Movie
-$.ajax("/api/movies", {
-    type: "PUT",
-    data: {
-        title: movieName,
-        rating: movieRating,
-        genre: movieGenre,
-        year: movieYear
-    }
-});
-
-// Binds Rating to Star Selection ***Need to add edit start functionality***
+// Binds Rating to Star Selection
 function bindStarEvents() {
     [...document.querySelectorAll('span.star')].map(star => {
         star.addEventListener('click', e => {
@@ -107,3 +128,20 @@ function bindStarEvents() {
     });
 }
 bindStarEvents();
+
+function editStarEvents() {
+    [...document.querySelectorAll('span.editStar')].map(editStar => {
+        editStar.addEventListener('click', e => {
+            let clicked = e.currentTarget;
+            let input = document.querySelector('#edit-rating-hidden');
+            input.value = clicked.getAttribute('data-edit-star');
+            [...document.querySelectorAll('span.editStar')].map(editStar => {
+                let val = editStar.getAttribute('data-edit-star');
+                let active = val > input.value ? 'editStar' : 'editStar-active';
+                editStar.classList.remove('editStar-active');
+                editStar.classList.add(active);
+            });
+        });
+    });
+}
+editStarEvents();
