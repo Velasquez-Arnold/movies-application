@@ -67,7 +67,30 @@ $('#newMovieButton').click(function (event) {
     });
 });
 
-// Binds Rating to Star Selection
+//Edit Movie Start
+
+$('.editMovieButton').click(function() {
+    event.preventDefault();
+    const movieID = $('#editMovieId').val();
+    const newMovieName = $('#editMovieName').val();
+    const newMovieGenre = $('#editMovieGenre').val();
+    const newMovieYear = $('#editMovieYear').val()
+    const newMovieRating = $('#edit-rating-hidden').val();
+    $('#insertProducts').empty();
+});
+
+// Replaces old Movie
+$.ajax("/api/movies", {
+    type: "PUT",
+    data: {
+        title: movieName,
+        rating: movieRating,
+        genre: movieGenre,
+        year: movieYear
+    }
+});
+
+// Binds Rating to Star Selection ***Need to add edit start functionality***
 function bindStarEvents() {
     [...document.querySelectorAll('span.star')].map(star => {
         star.addEventListener('click', e => {
