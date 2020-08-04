@@ -3,12 +3,51 @@
     {
       "title": "Casablanca",
       "rating": "4",
+      "genre": "Elderly",
+      "year": "Girl idk, 1600's?",
       "id": 1
     },
     {
       "title": "Star Wars: A New Hope",
       "rating": "5",
+      "genre": "Iconic",
+      "year": "1977",
       "id": 2
+    },
+    {
+      "title": "Sonic The Hedgehog",
+      "rating": "5",
+      "genre": "Horror",
+      "year": "2020",
+      "id": 3
+    },
+    {
+      "title": "G.U.Y (An ARTPOP Film)",
+      "rating": "5",
+      "genre": "Also Iconic",
+      "year": "2013",
+      "id": 4
+    },
+    {
+      "title": "Kill Bill",
+      "rating": "4",
+      "genre": "Uma Thurman",
+      "year": "2002",
+      "id": 5
+    },
+    {
+      "title": "Mean Girls",
+      "rating": "5",
+      "genre": "Lindsay Lohan B.C.",
+      "year": "2004",
+      "id": 6
+    },
+    {
+      "title": "Birds of Prey ",
+      "rating": "5",
+      "genre": "Good soundtrack... amazing soundtrack",
+      "year": "2020",
+      "id": 7
     }
   ]
 }
