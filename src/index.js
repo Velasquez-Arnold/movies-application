@@ -75,7 +75,7 @@ $('#editMovieButton').click(function () {
         year: newMovieYear.val()
     };
     console.log(moviePost);
-    const url = '/api/movies/' + movieID.val();
+    const url = '/api/movies/' + newMovieName.val();
     const options = {
         method: 'PUT',
         headers: {
@@ -84,25 +84,22 @@ $('#editMovieButton').click(function () {
         body: JSON.stringify(moviePost),
     };
     fetch(url, options).then(response => response.json());
-
     $('#insertProducts').empty();
-
 // Updates Table using callback function
     renderMovies();
-})
+});
 
 
 // //Delete movie button
 
-$(document).on("click", '.deleteMovieButton', function () {
-console.log('test')
-    $.ajax({
-        url: `/api/movies/${$(this).attr('data-id')}`,
-        type: "DELETE",
-        dataType: "json",
-    })
-    .done(function(data){console.log(data)});
-});
+// $(document).on("click", '.deleteMovieButton', function () {
+// console.log('test')
+//     $.ajax({
+//         url: `/api/movies/${$(this).attr('data-id')}`,
+//         type: "DELETE",
+//         dataType: "json",
+//     })
+// });
 
 // Binds Rating to Star Selection
 function bindStarEvents() {
@@ -120,7 +117,6 @@ function bindStarEvents() {
         });
     });
 }
-
 bindStarEvents();
 
 function editStarEvents() {
@@ -138,5 +134,4 @@ function editStarEvents() {
         });
     });
 }
-
 editStarEvents();
