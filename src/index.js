@@ -17,14 +17,16 @@ const {getMovies} = require('./api.js');
 const renderMovies = function() {
     getMovies().then((movies) => {
         console.log('Here are all the movies:');
-        movies.forEach(({title, rating, year, genre, id}) => {
+        movies.forEach(({title, image, rating, year, genre, id}) => {
             console.log(`id#${id} - ${title} - rating: ${rating}`);
             $('#insertProducts').append(`<tr>
                       <td scope="row"> ${id} </td>
-                      <td >${title}</td>
+                      <td>${title}</td>
+                      <td><img class="movie-poster" src="${image}" alt=""></td>
                       <td> ${rating} </td>
                       <td> ${genre}</td>
                       <td> ${year}</td>
+                      <td><a href="#" class="deleteMovieButton" data-id="${id}"><img class="trash-icon" src="img/cute-trash-can.png" alt="cute lil trashcan"></a></td>
                       </tr>`);
         });
     }).catch((error) => {
@@ -75,7 +77,7 @@ $('#editMovieButton').click(function () {
         year: newMovieYear.val()
     };
     console.log(moviePost);
-    const url = '/api/movies/' + newMovieName.val();
+    const url = '/api/movies/' + movieID.val();
     const options = {
         method: 'PUT',
         headers: {
@@ -87,19 +89,21 @@ $('#editMovieButton').click(function () {
     $('#insertProducts').empty();
 // Updates Table using callback function
     renderMovies();
+
 });
 
 
 // //Delete movie button
 
-// $(document).on("click", '.deleteMovieButton', function () {
-// console.log('test')
-//     $.ajax({
-//         url: `/api/movies/${$(this).attr('data-id')}`,
-//         type: "DELETE",
-//         dataType: "json",
-//     })
-// });
+$(document).on("click", '.deleteMovieButton', function () {
+console.log('test')
+    $.ajax({
+        url: `/api/movies/${$(this).attr('data-id')}`,
+        type: "DELETE",
+        dataType: "json",
+    })
+        .done(location.reload());
+});
 
 // Binds Rating to Star Selection
 function bindStarEvents() {
