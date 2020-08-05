@@ -1,14 +1,6 @@
 {
   "movies": [
     {
-      "title": "G.U.Y (An ARTPOP Film)",
-      "image": "img/movies/mean_girls.jpg",
-      "rating": "5",
-      "genre": "Also Iconic",
-      "year": "2013",
-      "id": 4
-    },
-    {
       "title": "Mean Girls",
       "image": "img/movies/mean_girls.jpg",
       "rating": "5",
@@ -18,15 +10,15 @@
     },
     {
       "title": "Birds of Prey ",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/birds-of-prey.jpg",
       "rating": "5",
       "genre": "Good soundtrack... amazing soundtrack",
       "year": "2020",
       "id": 7
     },
     {
-      "title": "Nemo",
-      "image": "img/movies/mean_girls.jpg",
+      "title": "Finding Nemo",
+      "image": "img/movies/finding-nemo.jpg",
       "rating": "2",
       "genre": "Horror",
       "year": "1960",
@@ -34,7 +26,7 @@
     },
     {
       "title": "Parasite",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/parasite.jpg",
       "rating": "5",
       "genre": "Suspense",
       "year": "2019",
@@ -42,7 +34,7 @@
     },
     {
       "title": "The Princess Bride",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/the-princess-bride.jpg",
       "rating": "4",
       "genre": "Adventure",
       "year": "1987",
@@ -50,7 +42,7 @@
     },
     {
       "title": "The Princess Diaries",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/the-princess-diaries.jpg",
       "rating": "5",
       "genre": "Comedy",
       "year": "2001",
@@ -59,14 +51,14 @@
     {
       "id": 12,
       "title": "Sonic The Hedgehog",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/sonic-the-hedgehog.jpg",
       "rating": "5",
       "genre": "Cultural Reset",
       "year": "2020"
     },
     {
       "title": "Black is King",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/black-is-king.jpg",
       "rating": "5",
       "genre": "Cultural Reset",
       "year": "2020",
@@ -74,7 +66,7 @@
     },
     {
       "title": "Some Like It Hot",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/some-like-it-hot.jpg",
       "rating": "5",
       "genre": "Comedy",
       "year": "1959",
@@ -90,7 +82,7 @@
     },
     {
       "title": "Dr.Strangelove",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/dr-strangelove.jpg",
       "rating": "4",
       "genre": "Satire",
       "year": "1964",
@@ -98,7 +90,7 @@
     },
     {
       "title": "Toy Story ",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/toy-story.jpg",
       "rating": "3",
       "genre": "Animation",
       "year": "1995",
@@ -106,7 +98,7 @@
     },
     {
       "title": "Toy Story 2",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/toy-story-2.jpg",
       "rating": "5",
       "genre": "Animation",
       "year": "1998",
@@ -114,7 +106,7 @@
     },
     {
       "title": "Titanic",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/titanic.jpg",
       "rating": "5",
       "genre": "Romance",
       "year": "1997",
@@ -122,7 +114,7 @@
     },
     {
       "title": "Holes",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/holes.jpg",
       "rating": "5",
       "genre": "Cultural Reset",
       "year": "2003",
@@ -130,23 +122,15 @@
     },
     {
       "title": "Clueless",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/clueless.jpg",
       "rating": "5",
       "genre": "Cultural Reset",
       "year": "1995",
       "id": 21
     },
     {
-      "title": "Heathers",
-      "image": "img/movies/mean_girls.jpg",
-      "rating": "4",
-      "genre": "Satire",
-      "year": "1988",
-      "id": 22
-    },
-    {
       "title": "Star Wars: Episode III – Revenge of the Sith",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/star-wars-3.jpg",
       "rating": "4",
       "genre": "Anakin was Groomed",
       "year": "2005",
@@ -154,7 +138,7 @@
     },
     {
       "title": "Awake",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/awake.jpg",
       "rating": "3",
       "genre": "Suspense",
       "year": "2007",
@@ -162,7 +146,7 @@
     },
     {
       "title": "The Invisible Man",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/the-invisible-man.jpg",
       "rating": "4",
       "genre": "Suspense",
       "year": "2020",
@@ -170,15 +154,15 @@
     },
     {
       "title": "Pans Labyrinth",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/pans-labyrinth.jpg",
       "rating": "5",
       "genre": "Fantasy",
       "year": "2006",
       "id": 26
     },
     {
-      "title": "Shape of Water",
-      "image": "img/movies/mean_girls.jpg",
+      "title": "The Shape of Water",
+      "image": "img/movies/the-shape-of-water.jpg",
       "rating": "5",
       "genre": "Fantasy",
       "year": "2017",
@@ -186,7 +170,7 @@
     },
     {
       "title": "Saw 3",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/saw-3.jpg",
       "rating": "5",
       "genre": "Southern Comfort",
       "year": "2006",
@@ -194,7 +178,7 @@
     },
     {
       "title": "Final Destination",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/final-destination.jpg",
       "rating": "4",
       "genre": "Existential",
       "year": "2000",
@@ -202,7 +186,7 @@
     },
     {
       "title": "Knives Out",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/knives-out.jpg",
       "rating": "5",
       "genre": "Mystery",
       "year": "2019",
@@ -210,7 +194,7 @@
     },
     {
       "title": "Jojo Rabbit",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/jojo-rabbit.jpg",
       "rating": "5",
       "genre": "Satire",
       "year": "2019",
@@ -218,7 +202,7 @@
     },
     {
       "title": "MA",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/ma.jpg",
       "rating": "4",
       "genre": "Octavia Spencer Murder Spree",
       "year": "2019",
@@ -226,7 +210,7 @@
     },
     {
       "title": "Midsommar",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/midsommar.jpg",
       "rating": "3",
       "genre": "Cult Suspense",
       "year": "2019",
@@ -234,7 +218,7 @@
     },
     {
       "title": "Ready or Not",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/ready-or-not.jpg",
       "rating": "5",
       "genre": "Suspense",
       "year": "2019",
@@ -242,7 +226,7 @@
     },
     {
       "title": "Uncut Gems",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/uncut-gems.jpg",
       "rating": "5",
       "genre": "Dark Comedy",
       "year": "2019",
@@ -266,7 +250,7 @@
     },
     {
       "title": "The Usual Suspects",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/the-usual-suspects.jpg",
       "rating": "4",
       "genre": "Mystery",
       "year": "1995",
@@ -274,7 +258,7 @@
     },
     {
       "title": "Legally Blonde",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/legally-blonde.jpg",
       "rating": "5",
       "genre": "Blonde Empowerment",
       "year": "2001",
@@ -282,7 +266,7 @@
     },
     {
       "title": "White Chicks",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/white-chicks.jpg",
       "rating": "4",
       "genre": "Problematic(?)",
       "year": "2004",
@@ -290,11 +274,19 @@
     },
     {
       "title": "The Jungle Book",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "img/movies/the-jungle-book.jpg",
       "rating": "4",
       "genre": "Live Action",
       "year": "1994",
       "id": 41
+    },
+    {
+      "title": "A Star is Born",
+      "image": "img/movies/a-star-is-born.jpg",
+      "rating": "5",
+      "genre": "Drama",
+      "year": "2019",
+      "id": 42
     }
   ]
 }
