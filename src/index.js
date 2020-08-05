@@ -14,45 +14,7 @@ sayHello('World');
 const {getMovies} = require('./api.js');
 
 // Generates Movies on Table with all info
-getMovies().then((movies) => {
-    console.log('Here are all the movies:');
-    movies.forEach(({title, rating, year, genre, id}) => {
-        console.log(`id#${id} - ${title} - rating: ${rating}`);
-        $('#insertProducts').append(`<tr>
-                      <td scope="row">${id}</td>
-                      <td> ${title} </td>
-                      <td> ${rating} </td>
-                      <td> ${genre}</td>
-                      <td> ${year}</td>
-                      <td><a href="#" class="deleteMovieButton" data-id="${id}"><img class="trash-icon" src="img/cute-trash-can.png" alt="cute lil trashcan"></a></td>
-                      </tr>`);
-    });
-}).catch((error) => {
-    alert('Oh no! Something went wrong.\nCheck the console for details.');
-    console.log(error);
-});
-
-// Adds Movie
-$('#newMovieButton').click(function (event) {
-    event.preventDefault();
-    const movieName = $('#movieNameInput').val();
-    const movieGenre = $('#addMovieGenre').val();
-    const movieYear = $('#addMovieYear').val()
-    const movieRating = $('#rating-hidden').val();
-    $('#insertProducts').empty();
-
-    // Stores Movies
-    $.ajax("/api/movies", {
-        type: "POST",
-        data: {
-            title: movieName,
-            rating: movieRating,
-            genre: movieGenre,
-            year: movieYear
-        }
-    });
-
-    // Updates Table
+const renderMovies = function() {
     getMovies().then((movies) => {
         console.log('Here are all the movies:');
         movies.forEach(({title, rating, year, genre, id}) => {
@@ -63,14 +25,40 @@ $('#newMovieButton').click(function (event) {
                       <td> ${rating} </td>
                       <td> ${genre}</td>
                       <td> ${year}</td>
-                      <td><i class="fas fa-dumpster-fire"></i></td>
                       </tr>`);
         });
     }).catch((error) => {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
         console.log(error);
     });
+}
+
+//Initial movie rendering
+renderMovies()
+
+// Adds Movie
+$('#newMovieButton').click(function (event) {
+    event.preventDefault();
+    const movieName = $('#movieNameInput').val();
+    const movieGenre = $('#addMovieGenre').val();
+    const movieYear = $('#addMovieYear').val()
+    const movieRating = $('#rating-hidden').val();
+    $('#insertProducts').empty();
+
+// Stores Movies
+    $.ajax("/api/movies", {
+        type: "POST",
+        data: {
+            title: movieName,
+            rating: movieRating,
+            genre: movieGenre,
+            year: movieYear
+        }
+    })
+// Updates Table using callback function
+        .done(renderMovies);
 });
+
 
 //Edit Movie Start
 $('#editMovieButton').click(function () {
@@ -87,7 +75,7 @@ $('#editMovieButton').click(function () {
         year: newMovieYear.val()
     };
     console.log(moviePost);
-    const url = '/api/movies/' + newMovieName.val();
+    const url = '/api/movies/' + movieID.val();
     const options = {
         method: 'PUT',
         headers: {
@@ -99,23 +87,10 @@ $('#editMovieButton').click(function () {
 
     $('#insertProducts').empty();
 
-    getMovies().then((movies) => {
-        console.log('Here are all the movies:');
-        movies.forEach(({title, rating, year, genre, id}) => {
-            console.log(`id#${id} - ${title} - rating: ${rating}`);
-            $('#insertProducts').append(`<tr>
-                      <td scope="row"> ${id} </td>
-                      <td>${title}</td>
-                      <td> ${rating} </td>
-                      <td> ${genre}</td>
-                      <td> ${year}</td>
-                      </tr>`);
-        });
-    }).catch((error) => {
-        alert('Oh no! Something went wrong.\nCheck the console for details.');
-        console.log(error);
-    });
-});
+// Updates Table using callback function
+    renderMovies();
+})
+
 
 // //Delete movie button
 

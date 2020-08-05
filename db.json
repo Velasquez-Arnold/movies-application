@@ -1,32 +1,11 @@
 {
   "movies": [
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "genre": "Iconic",
-      "year": "1977",
-      "id": 2
-    },
-    {
-      "title": "Sonic The Hedgehog",
-      "rating": "5",
-      "genre": "Horror",
-      "year": "2020",
-      "id": 3
-    },
-    {
       "title": "G.U.Y (An ARTPOP Film)",
       "rating": "5",
       "genre": "Also Iconic",
       "year": "2013",
       "id": 4
-    },
-    {
-      "id": 5,
-      "title": "Kill Bill Vol.1",
-      "rating": "4",
-      "genre": "Action",
-      "year": "2003"
     },
     {
       "title": "Mean Girls",
@@ -55,6 +34,13 @@
       "genre": "Sad Girl Times",
       "year": "2001",
       "id": 9
+    },
+    {
+      "id": 10,
+      "title": "Grease 2",
+      "rating": "3",
+      "genre": "sequels",
+      "year": "2020"
     }
   ]
 }
