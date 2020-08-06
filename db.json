@@ -286,6 +286,54 @@
       "genre": "Family",
       "year": "2003",
       "id": 44
+    },
+    {
+      "id": 47,
+      "title": "17 Again",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjA2NTI1Mzg3N15BMl5BanBnXkFtZTcwMjYwNjAzMg@@._V1_SX300.jpg",
+      "rating": "3",
+      "genre": "Comedy",
+      "year": "2009"
+    },
+    {
+      "id": 48,
+      "title": "The Interview",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTQzMTcwMzgyMV5BMl5BanBnXkFtZTgwMzAyMzQ2MzE@._V1_SX300.jpg",
+      "rating": "4",
+      "genre": "Comedy",
+      "year": "2014"
+    },
+    {
+      "id": 49,
+      "title": "Zoolander",
+      "image": "",
+      "rating": "4",
+      "genre": "Comedy",
+      "year": "2001"
+    },
+    {
+      "id": 50,
+      "title": "Scary Movie",
+      "image": "",
+      "rating": "5",
+      "genre": "Comedy",
+      "year": "2000"
+    },
+    {
+      "id": 51,
+      "title": "Shrek",
+      "image": "",
+      "rating": "5",
+      "genre": "Comedy",
+      "year": "2001"
+    },
+    {
+      "id": 52,
+      "title": "Shrek 2",
+      "image": "",
+      "rating": "5",
+      "genre": "Comedy",
+      "year": "2004"
     }
   ]
 }
