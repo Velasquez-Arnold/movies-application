@@ -3,14 +3,14 @@
     {
       "id": 6,
       "title": "Mean Girls",
-      "image": "poster.Search[0].Poster",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Comedy",
       "year": "2004"
     },
     {
       "title": "Birds of Prey ",
-      "image": "img/movies/birds-of-prey.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMzQ3NTQxMjItODBjYi00YzUzLWE1NzQtZTBlY2Y2NjZlNzkyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Action",
       "year": "2020",
@@ -18,7 +18,7 @@
     },
     {
       "title": "Finding Nemo",
-      "image": "img/movies/finding-nemo.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BZTAzNWZlNmUtZDEzYi00ZjA5LWIwYjEtZGM1NWE1MjE4YWRhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
       "rating": "2",
       "genre": "Family",
       "year": "1960",
@@ -26,7 +26,7 @@
     },
     {
       "title": "Parasite",
-      "image": "img/movies/parasite.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Suspense",
       "year": "2019",
@@ -34,7 +34,7 @@
     },
     {
       "title": "The Princess Diaries",
-      "image": "img/movies/the-princess-diaries.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMzcwYjEwMzEtZTZmMi00ZGFhLWJhZjItMDAzNDVkNjZmM2U5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Family",
       "year": "2001",
@@ -42,7 +42,7 @@
     },
     {
       "title": "Black is King",
-      "image": "img/movies/black-is-king.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BYWNkOWU1MDUtNzMzMy00NTAwLWExZTAtZjJlZjg0YWNiZjE3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Cultural Reset",
       "year": "2020",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Some Like It Hot",
-      "image": "img/movies/some-like-it-hot.jpg",
+      "image": "./img/movies/some-like-it-hot.jpg",
       "rating": "5",
       "genre": "Comedy",
       "year": "1959",
@@ -58,7 +58,7 @@
     },
     {
       "title": "Some Like It Hot",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "./img/movies/some-like-it-hot.jpg",
       "rating": "5",
       "genre": "Comedy",
       "year": "1959",
@@ -66,7 +66,7 @@
     },
     {
       "title": "Dr.Strangelove",
-      "image": "img/movies/dr-strangelove.jpg",
+      "image": "./img/movies/dr-strangelove.jpg",
       "rating": "4",
       "genre": "Satire",
       "year": "1964",
@@ -74,7 +74,7 @@
     },
     {
       "title": "Toy Story ",
-      "image": "img/movies/toy-story.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg",
       "rating": "3",
       "genre": "Family",
       "year": "1995",
@@ -82,7 +82,7 @@
     },
     {
       "title": "Toy Story 2",
-      "image": "img/movies/toy-story-2.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMWM5ZDcxMTYtNTEyNS00MDRkLWI3YTItNThmMGExMWY4NDIwXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Family",
       "year": "1998",
@@ -90,7 +90,7 @@
     },
     {
       "title": "Titanic",
-      "image": "img/movies/titanic.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Romance",
       "year": "1997",
@@ -98,7 +98,7 @@
     },
     {
       "title": "Holes",
-      "image": "img/movies/holes.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTg0MTU5ODkwM15BMl5BanBnXkFtZTYwMzgxNzY3._V1_SX300.jpg",
       "rating": "5",
       "genre": "Family",
       "year": "2003",
@@ -106,23 +106,22 @@
     },
     {
       "title": "Clueless",
-      "image": "img/movies/clueless.jpg",
-      "rating": "5",
+      "image": "https://m.media-amazon.com/images/M/MV5BMzBmOGQ0NWItOTZjZC00ZDAxLTgyOTEtODJiYWQ2YWNiYWVjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg",
       "genre": "Cultural Reset",
       "year": "1995",
       "id": 21
     },
     {
       "title": "Star Wars: Episode III – Revenge of the Sith",
-      "image": "img/movies/star-wars-3.jpg",
+      "image": "",
       "rating": "4",
-      "genre": "Anakin was Groomed",
+      "genre": "Sci-Fi",
       "year": "2005",
       "id": 23
     },
     {
       "title": "Awake",
-      "image": "img/movies/awake.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjE3NDczNTIyOV5BMl5BanBnXkFtZTcwMDQwMjU1MQ@@._V1_SX300.jpg",
       "rating": "3",
       "genre": "Suspense",
       "year": "2007",
@@ -130,15 +129,15 @@
     },
     {
       "title": "The Invisible Man",
-      "image": "img/movies/the-invisible-man.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BZjFhM2I4ZDYtZWMwNC00NTYzLWE3MDgtNjgxYmM3ZWMxYmVmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
       "rating": "4",
       "genre": "Suspense",
       "year": "2020",
       "id": 25
     },
     {
-      "title": "Pans Labyrinth",
-      "image": "img/movies/pans-labyrinth.jpg",
+      "title": "Pan's Labyrinth",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTU3ODg2NjQ5NF5BMl5BanBnXkFtZTcwMDEwODgzMQ@@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Fantasy",
       "year": "2006",
@@ -146,15 +145,15 @@
     },
     {
       "title": "The Shape of Water",
-      "image": "img/movies/the-shape-of-water.jpg",
+      "image": "./img/movies/the-shape-of-water.jpg",
       "rating": "5",
       "genre": "Fantasy",
       "year": "2017",
       "id": 27
     },
     {
-      "title": "Saw 3",
-      "image": "img/movies/saw-3.jpg",
+      "title": "Saw III",
+      "image": "",
       "rating": "5",
       "genre": "Horror",
       "year": "2006",
@@ -162,7 +161,7 @@
     },
     {
       "title": "Final Destination",
-      "image": "img/movies/final-destination.jpg",
+      "image": "",
       "rating": "4",
       "genre": "Horror",
       "year": "2000",
@@ -170,7 +169,7 @@
     },
     {
       "title": "Knives Out",
-      "image": "img/movies/knives-out.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Mystery",
       "year": "2019",
@@ -178,15 +177,15 @@
     },
     {
       "title": "Jojo Rabbit",
-      "image": "img/movies/jojo-rabbit.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BZjU0Yzk2MzEtMjAzYy00MzY0LTg2YmItM2RkNzdkY2ZhN2JkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Satire",
       "year": "2019",
       "id": 31
     },
     {
-      "title": "Ma",
-      "image": "img/movies/ma.jpg",
+      "title": "MA",
+      "image": "",
       "rating": "4",
       "genre": "Horror",
       "year": "2019",
@@ -194,7 +193,7 @@
     },
     {
       "title": "Midsommar",
-      "image": "img/movies/midsommar.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_SX300.jpg",
       "rating": "3",
       "genre": "Suspense",
       "year": "2019",
@@ -203,13 +202,14 @@
     {
       "id": 34,
       "title": "Ready or Not",
+      "image": "",
       "rating": "4",
       "genre": "Horror",
       "year": "2002"
     },
     {
       "title": "Uncut Gems",
-      "image": "img/movies/uncut-gems.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BZDhkMjUyYjItYWVkYi00YTM5LWE4MGEtY2FlMjA3OThlYmZhXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Dark Comedy",
       "year": "2019",
@@ -217,7 +217,7 @@
     },
     {
       "title": "The Parent Trap",
-      "image": "img/movies/the-parent-trap.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BNWYyMzJhNzEtMzFkNC00M2U0LTkwMWYtYWVkN2Y2MGI5ODZkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Family",
       "year": "1998",
@@ -225,7 +225,7 @@
     },
     {
       "title": "Freaky Friday",
-      "image": "img/movies/freaky-friday.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BYmU4NTk4OWYtMjE4My00MGVkLTgwY2EtZTZjN2YyOGFiMDQ0L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
       "rating": "3",
       "genre": "Family",
       "year": "2003",
@@ -233,7 +233,7 @@
     },
     {
       "title": "The Usual Suspects",
-      "image": "img/movies/the-usual-suspects.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
       "rating": "4",
       "genre": "Mystery",
       "year": "1995",
@@ -241,7 +241,7 @@
     },
     {
       "title": "Legally Blonde",
-      "image": "img/movies/legally-blonde.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BNTEyNjUwMTkxMV5BMl5BanBnXkFtZTcwNjk0NDk0NA@@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Comedy",
       "year": "2001",
@@ -249,7 +249,7 @@
     },
     {
       "title": "White Chicks",
-      "image": "img/movies/white-chicks.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTY3OTg2OTM3OV5BMl5BanBnXkFtZTYwNzY5OTA3._V1_SX300.jpg",
       "rating": "4",
       "genre": "Comedy",
       "year": "2004",
@@ -257,7 +257,7 @@
     },
     {
       "title": "The Jungle Book",
-      "image": "img/movies/the-jungle-book.jpg",
+      "image": "./img/movies/the-jungle-book.jpg",
       "rating": "4",
       "genre": "Family",
       "year": "1994",
@@ -265,7 +265,7 @@
     },
     {
       "title": "A Star is Born",
-      "image": "img/movies/a-star-is-born.jpg",
+      "image": "https://m.media-amazon.com/images/M/MV5BNmE5ZmE3OGItNTdlNC00YmMxLWEzNjctYzAwOGQ5ODg0OTI0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
       "rating": "5",
       "genre": "Drama",
       "year": "2019",
@@ -274,30 +274,18 @@
     {
       "id": 43,
       "title": "Hush",
+      "image": "",
       "rating": "4",
       "genre": "Horror",
       "year": "2016"
     },
     {
-      "title": "Test",
+      "title": "The Lizzie McGuire Movie",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTMzNDg1NDc0NF5BMl5BanBnXkFtZTYwOTY2OTU3._V1_SX300.jpg",
       "rating": "4",
-      "genre": "Horror",
-      "year": "2020",
+      "genre": "Family",
+      "year": "2003",
       "id": 44
-    },
-    {
-      "title": "test movie",
-      "rating": "4",
-      "genre": "Suspense",
-      "year": "2020",
-      "id": 46
-    },
-    {
-      "title": "test movie",
-      "rating": "5",
-      "genre": "Suspense",
-      "year": "2016",
-      "id": 47
     }
   ]
 }

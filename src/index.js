@@ -21,13 +21,11 @@ const {getMovies} = require('./api.js');
 //Build API call and pulls poster
 const moviePoster = function (title) {
     const opt = {
-    method: "GET"
+        method: "GET"
     }
-    fetch(`http://www.omdbapi.com/?apikey=dc658566&s=${title}`, opt)
+    return fetch(`http://www.omdbapi.com/?apikey=dc658566&s=${title}`, opt)
         .then((response) => response.json())
-        .then(function (poster){
-        console.log(poster)})
-        .catch((error) => console.log(error));
+
 }
 
 moviePoster('Legally Blonde')
@@ -53,9 +51,28 @@ const renderMovies = function (genre) {
                 moviesSection = idTag[3];
             }
             console.log(`id#${id} - ${title} - rating: ${rating}`);
-            const poster = `http://www.omdbapi.com/?apikey=dc658566&s=${title.Search[0].Poster}`
+            if (image === "") {
+                moviePoster(title)
+                    .then(function (poster) {
+                        console.log(poster)
+                        let imageURL = poster.Search[0].Poster;
+                        image = imageURL;
+                        fetch("/api/movies/" + id, {
+                            method: "PATCH",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                image: imageURL
+                            })
+                        }) .catch(error => {console.log(error)})
+                    })
+                    .catch((error) => {
+                        console.log(error)
+                    });
+            }
             $(moviesSection).append(`
-                 <div class="box" style="background-image: url(`http://www.omdbapi.com/?apikey=dc658566&s=${title.Search[0].Poster}`)">
+                 <div class="box" style="background-image: url(${image})">
                   <ul>
                       <li> ${id} </li>
                       <li> ${title}</li>
@@ -71,6 +88,12 @@ const renderMovies = function (genre) {
         console.log(error);
     });
 }
+
+
+// const getPoster = function (movie) {
+// if (movie.image === ""){
+// moviePoster(movie.title)}
+// }
 
 
 // $('.box div').click(function(){
