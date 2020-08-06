@@ -1,5 +1,10 @@
+const genreList = ['Comedy', "Family", "Suspense", "Drama", "Dark Comedy", "Action", "Cultural Reset", "Satire", "Romance", "Fantasy", "Mystery"]
 const $ = require('jquery');
 // const {deleteMovie} = require('./api.js');
+
+import movieKey from './keys.js'
+
+console.log(movieKey)
 /**
  * es6 modules and imports
  */
@@ -13,21 +18,53 @@ sayHello('World');
 // Retrieves Movie Info
 const {getMovies} = require('./api.js');
 
+//Build API call and pulls poster
+const moviePoster = function (title) {
+    const opt = {
+    method: "GET"
+    }
+    fetch(`http://www.omdbapi.com/?apikey=dc658566&s=${title}`, opt)
+        .then((response) => response.json())
+        .then(function (poster){
+        console.log(poster)})
+        .catch((error) => console.log(error));
+}
+
+moviePoster('Legally Blonde')
+
+
 // Generates Movies on Table with all info
-const renderMovies = function() {
+const renderMovies = function (genre) {
     getMovies().then((movies) => {
         console.log('Here are all the movies:');
-        movies.forEach(({title, image, rating, year, genre, id}) => {
+        let idTag = ["#family-movies", "#comedy-movies", "#suspense-movies", "#general-movies"];
+        let moviesSection = "";
+        const movieFilter = movies.filter(function (movie) {
+            return movie.genre === genre
+        })
+        movieFilter.forEach(({title, image, rating, year, genre, id}) => {
+            if (genre === "Family") {
+                moviesSection = idTag[0];
+            } else if (genre === "Comedy") {
+                moviesSection = idTag[1];
+            } else if (genre === "Suspense") {
+                moviesSection = idTag[2];
+            } else {
+                moviesSection = idTag[3];
+            }
             console.log(`id#${id} - ${title} - rating: ${rating}`);
-            $('#insertProducts').append(`<tr>
-                      <td scope="row"> ${id} </td>
-                      <td>${title}</td>
-                      <td><img class="movie-poster" src="${image}" alt=""></td>
-                      <td> ${rating} </td>
-                      <td> ${genre}</td>
-                      <td> ${year}</td>
-                      <td><a href="#" class="deleteMovieButton" data-id="${id}"><img class="trash-icon" src="img/cute-trash-can.png" alt="cute lil trashcan"></a></td>
-                      </tr>`);
+            const poster = `http://www.omdbapi.com/?apikey=dc658566&s=${title.Search[0].Poster}`
+            $(moviesSection).append(`
+                 <div class="box" style="background-image: url(`http://www.omdbapi.com/?apikey=dc658566&s=${title.Search[0].Poster}`)">
+                  <ul>
+                      <li> ${id} </li>
+                      <li> ${title}</li>
+                      <li> ${rating} </li>
+                      <li> ${genre}</li>
+                      <li> ${year}</li>
+                      <li><a href="#" class="deleteMovieButton" data-id="${id}"><img class="trash-icon" src="img/cute-trash-can.png" alt="cute lil trashcan"></a></li>
+                  </ul>
+</div>`)
         });
     }).catch((error) => {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
@@ -35,8 +72,21 @@ const renderMovies = function() {
     });
 }
 
-//Initial movie rendering
+
+// $('.box div').click(function(){
+//     // $('.movie-info div').toggleClass("d-none");
+//     console.log("box clicked")
+// });
+
+//Initial movie rendering and sort
+
 renderMovies()
+
+//needs to move somewhere - broke add a movie function
+for (let i = 0; i < genreList.length; i++) {
+    renderMovies(genreList[i]);
+}
+
 
 // Adds Movie
 $('#newMovieButton').click(function (event) {
@@ -57,8 +107,9 @@ $('#newMovieButton').click(function (event) {
             year: movieYear
         }
     })
-// Updates Table using callback function
+        // Updates Table using callback function
         .done(renderMovies);
+
 });
 
 
@@ -92,11 +143,10 @@ $('#editMovieButton').click(function () {
 
 });
 
-
 // //Delete movie button
 
 $(document).on("click", '.deleteMovieButton', function () {
-console.log('test')
+    console.log('test')
     $.ajax({
         url: `/api/movies/${$(this).attr('data-id')}`,
         type: "DELETE",
@@ -121,6 +171,7 @@ function bindStarEvents() {
         });
     });
 }
+
 bindStarEvents();
 
 function editStarEvents() {
@@ -138,4 +189,7 @@ function editStarEvents() {
         });
     });
 }
+
 editStarEvents();
+
+

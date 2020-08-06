@@ -1,18 +1,18 @@
 {
   "movies": [
     {
+      "id": 6,
       "title": "Mean Girls",
-      "image": "img/movies/mean_girls.jpg",
+      "image": "poster.Search[0].Poster",
       "rating": "5",
-      "genre": "Lindsay Lohan B.C.",
-      "year": "2004",
-      "id": 6
+      "genre": "Comedy",
+      "year": "2004"
     },
     {
       "title": "Birds of Prey ",
       "image": "img/movies/birds-of-prey.jpg",
       "rating": "5",
-      "genre": "Good soundtrack... amazing soundtrack",
+      "genre": "Action",
       "year": "2020",
       "id": 7
     },
@@ -20,7 +20,7 @@
       "title": "Finding Nemo",
       "image": "img/movies/finding-nemo.jpg",
       "rating": "2",
-      "genre": "Horror",
+      "genre": "Family",
       "year": "1960",
       "id": 8
     },
@@ -33,28 +33,12 @@
       "id": 9
     },
     {
-      "title": "The Princess Bride",
-      "image": "img/movies/the-princess-bride.jpg",
-      "rating": "4",
-      "genre": "Adventure",
-      "year": "1987",
-      "id": 10
-    },
-    {
       "title": "The Princess Diaries",
       "image": "img/movies/the-princess-diaries.jpg",
       "rating": "5",
-      "genre": "Comedy",
+      "genre": "Family",
       "year": "2001",
       "id": 11
-    },
-    {
-      "id": 12,
-      "title": "Sonic The Hedgehog",
-      "image": "img/movies/sonic-the-hedgehog.jpg",
-      "rating": "5",
-      "genre": "Cultural Reset",
-      "year": "2020"
     },
     {
       "title": "Black is King",
@@ -92,7 +76,7 @@
       "title": "Toy Story ",
       "image": "img/movies/toy-story.jpg",
       "rating": "3",
-      "genre": "Animation",
+      "genre": "Family",
       "year": "1995",
       "id": 17
     },
@@ -100,7 +84,7 @@
       "title": "Toy Story 2",
       "image": "img/movies/toy-story-2.jpg",
       "rating": "5",
-      "genre": "Animation",
+      "genre": "Family",
       "year": "1998",
       "id": 18
     },
@@ -116,7 +100,7 @@
       "title": "Holes",
       "image": "img/movies/holes.jpg",
       "rating": "5",
-      "genre": "Cultural Reset",
+      "genre": "Family",
       "year": "2003",
       "id": 20
     },
@@ -172,7 +156,7 @@
       "title": "Saw 3",
       "image": "img/movies/saw-3.jpg",
       "rating": "5",
-      "genre": "Southern Comfort",
+      "genre": "Horror",
       "year": "2006",
       "id": 28
     },
@@ -180,7 +164,7 @@
       "title": "Final Destination",
       "image": "img/movies/final-destination.jpg",
       "rating": "4",
-      "genre": "Existential",
+      "genre": "Horror",
       "year": "2000",
       "id": 29
     },
@@ -201,10 +185,10 @@
       "id": 31
     },
     {
-      "title": "MA",
+      "title": "Ma",
       "image": "img/movies/ma.jpg",
       "rating": "4",
-      "genre": "Octavia Spencer Murder Spree",
+      "genre": "Horror",
       "year": "2019",
       "id": 32
     },
@@ -212,17 +196,16 @@
       "title": "Midsommar",
       "image": "img/movies/midsommar.jpg",
       "rating": "3",
-      "genre": "Cult Suspense",
+      "genre": "Suspense",
       "year": "2019",
       "id": 33
     },
     {
+      "id": 34,
       "title": "Ready or Not",
-      "image": "img/movies/ready-or-not.jpg",
-      "rating": "5",
-      "genre": "Suspense",
-      "year": "2019",
-      "id": 34
+      "rating": "4",
+      "genre": "Horror",
+      "year": "2002"
     },
     {
       "title": "Uncut Gems",
@@ -236,7 +219,7 @@
       "title": "The Parent Trap",
       "image": "img/movies/the-parent-trap.jpg",
       "rating": "5",
-      "genre": "CLASSICS",
+      "genre": "Family",
       "year": "1998",
       "id": 36
     },
@@ -244,7 +227,7 @@
       "title": "Freaky Friday",
       "image": "img/movies/freaky-friday.jpg",
       "rating": "3",
-      "genre": "Comedy",
+      "genre": "Family",
       "year": "2003",
       "id": 37
     },
@@ -260,7 +243,7 @@
       "title": "Legally Blonde",
       "image": "img/movies/legally-blonde.jpg",
       "rating": "5",
-      "genre": "Blonde Empowerment",
+      "genre": "Comedy",
       "year": "2001",
       "id": 39
     },
@@ -268,7 +251,7 @@
       "title": "White Chicks",
       "image": "img/movies/white-chicks.jpg",
       "rating": "4",
-      "genre": "Problematic(?)",
+      "genre": "Comedy",
       "year": "2004",
       "id": 40
     },
@@ -276,7 +259,7 @@
       "title": "The Jungle Book",
       "image": "img/movies/the-jungle-book.jpg",
       "rating": "4",
-      "genre": "Live Action",
+      "genre": "Family",
       "year": "1994",
       "id": 41
     },
@@ -287,6 +270,34 @@
       "genre": "Drama",
       "year": "2019",
       "id": 42
+    },
+    {
+      "id": 43,
+      "title": "Hush",
+      "rating": "4",
+      "genre": "Horror",
+      "year": "2016"
+    },
+    {
+      "title": "Test",
+      "rating": "4",
+      "genre": "Horror",
+      "year": "2020",
+      "id": 44
+    },
+    {
+      "title": "test movie",
+      "rating": "4",
+      "genre": "Suspense",
+      "year": "2020",
+      "id": 46
+    },
+    {
+      "title": "test movie",
+      "rating": "5",
+      "genre": "Suspense",
+      "year": "2016",
+      "id": 47
     }
   ]
 }
