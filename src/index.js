@@ -71,16 +71,16 @@ const renderMovies = function (genre) {
                         console.log(error)
                     });
             }
-            $(moviesSection).append(`<div class="movie-info"> 
-                 <div class="box" style="background-image: url(${image})"></div>
-                  <div class="detail-card>"
-                      <p> ${id} </p>
-                      <p> ${title}</p>
-                      <p> ${rating} </p>
-                      <p> ${genre}</p>
-                      <p> ${year}</p>
-                      <p><a href="#" class="deleteMovieButton" data-id="${id}"><img class="trash-icon" src="img/cute-trash-can.png" alt="cute lil trashcan"></a></p>
-                  
+            $(moviesSection).append(`
+                 <div class="box" style="background-image: url(${image})">
+                  <ul>
+                      <li> ${id} </li>
+                      <li> ${title}</li>
+                      <li> ${rating} </li>
+                      <li> ${genre}</li>
+                      <li> ${year}</li>
+                      <li><a href="#" class="deleteMovieButton" data-id="${id}"><img class="trash-icon" src="img/cute-trash-can.png" alt="cute lil trashcan"></a></li>
+                  </ul>
 </div>`)
         });
     }).catch((error) => {

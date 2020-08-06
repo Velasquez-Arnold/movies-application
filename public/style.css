@@ -1,29 +1,27 @@
 html, body {
     height: 100%;
     background-color: #020120;
+    /*background-color: white;*/
     color: white;
+    /*color:#CF1C34;*/
+    /*text-shadow: 2px 2px 5px #FD98AC;*/
 }
-
 .nav {
-display: flex;
-justify-content:space-between;
-align-items:center;
-background-color: black;}
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: black;}
 
 .navSpan{
-margin-right:auto;
-}
-
+    margin-right:auto;}
 h1{
-margin-left: 20px;
-    font-family: 'Bungee Outline', cursive;
-    text-shadow: 2px 2px 5px #3377FC;
-}
+    margin-left: 20px;}
 
 h2 {
-text-align: left;
-margin:20px 0 0px 20px;
+    text-align: left;
+    margin:20px 0 0px 20px;
 }
+
 
 .main-container {
     position: relative;
@@ -51,25 +49,29 @@ margin:20px 0 0px 20px;
     width: 30px;
 }
 .movie-info {
-float: right}
+    float: right}
 
 
 ul {
-list-style: none;}
+    list-style: none;}
 
+/*.card {*/
+/*margin-top:40px}*/
 
 /*Carousel*/
-.movie-container {
+.container {
     display: flex;
     padding-top:20px;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 0px;
+    margin-right:0px;
     margin-top: 10px;
     margin-bottom:10px;
     height:258px;
-    width:96vw;
+    width:100vw;
     overflow-x: auto;
+    /*scroll-snap-type: x proximity;*/
 }
+
 
 ::-webkit-scrollbar {
     width: 0;
@@ -92,21 +94,14 @@ div.box {
     box-shadow: 0 4px 8px 0 #3377FC, 0 6px 20px 0 #2032AB;
 }
 
-.container:hover .movie-info {
+.container:hover .box {
     transform: translateX(-25%);
 }
 
-.movie-info:hover ~ .movie-info {
+.box:hover ~ .box {
     transform: translateX(25%);
 }
 
 .container .box:hover {
     transform: scale(1.2);
 }
-
-.movie-info {
-    display: flex;
-    width: 390px;
-    clear: right;
-}
-
