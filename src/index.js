@@ -1,4 +1,4 @@
-const genreList = ['Comedy', "Family", "Suspense", "Drama", "Dark Comedy", "Action", "Cultural Reset", "Satire", "Romance", "Fantasy", "Mystery"]
+const genreList = ['Comedy', "Family", "Suspense"]
 const $ = require('jquery');
 // const {deleteMovie} = require('./api.js');
 
@@ -93,10 +93,9 @@ const renderMovies = function (genre) {
     });
 }
 
-
+// initial call for renderMovies and for loop generate filtering
 renderMovies()
 
-//needs to move somewhere - broke add a movie function
 for (let i = 0; i < genreList.length; i++) {
     renderMovies(genreList[i]);
 }

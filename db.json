@@ -65,14 +65,6 @@
       "id": 15
     },
     {
-      "title": "Dr.Strangelove",
-      "image": "./img/movies/dr-strangelove.jpg",
-      "rating": "4",
-      "genre": "Satire",
-      "year": "1964",
-      "id": 16
-    },
-    {
       "title": "Toy Story ",
       "image": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg",
       "rating": "3",
@@ -130,7 +122,6 @@
     {
       "title": "The Invisible Man",
       "image": "./img/movies/the-invisible-man.jpg",
-
       "rating": "4",
       "genre": "Suspense",
       "year": "2020",
