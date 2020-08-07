@@ -1,3 +1,8 @@
+<!-- What I think we got left-->
+<!-- Mainly Aesthetics, fixing the nav cards so they dont look messy and fixing the scrolling feature-->
+<!-- Maybe Add some Horror movies-->
+
+<!-- You've been a really great partner through this project <3-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +15,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="nav">
-    <span><h1 class="text-center mt-3">Movie Application</h1></span>
-    <span>Blah </span>
-    <span class="navSpan">Blah Blah</span>
-    <button id="btn1">Button</button>
-    <button id="btn2">Button</button>
-</section>
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="custom p-4">
+            <ul class="card">
+                <div class="card-header"> <h2>Add A Movie!</h2> </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><input type="text" id="movieNameInput" placeholder="Enter Movie Title">
+                    </li>
+                    <li class="list-group-item"><input type="text" id="addMovieGenre" placeholder="Enter Genre"></li>
+                    <li class="list-group-item"><input type="text" id="addMovieYear" placeholder="Enter Year"></li>
+                    <li class="list-group-item"><label for="rating-hidden">How would you rate this movie?</label>
+                        <div class="stars">
+                            <form id="star-rating">
+                                <input id="rating-hidden" type="hidden">
+                                <span class="star" data-star="1">&#9733;</span>
+                                <span class="star" data-star="2">&#9733;</span>
+                                <span class="star" data-star="3">&#9733;</span>
+                                <span class="star" data-star="4">&#9733;</span>
+                                <span class="star" data-star="5">&#9733;</span>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <div class="card-footer text-muted">
+                    <button id="newMovieButton">Add Movie</button>
+                </div>
+            </ul>
+
+
+        <!-- EDIT A MOVIE CARD -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Edit A Movie!</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><input type="text" id="editMovieId" placeholder="Enter Movie ID"></li>
+                <li class="list-group-item"><input type="text" id="editMovieName" placeholder="Enter Movie Title"></li>
+                <li class="list-group-item"><input type="text" id="editMovieGenre" placeholder="Enter Genre"></li>
+                <li class="list-group-item"><input type="text" id="editMovieYear" placeholder="Enter Year"></li>
+                <li class="list-group-item"><label for="edit-rating-hidden">How would you rate this movie?</label>
+                    <div class="stars">
+                        <form id="edit-star-rating">
+                            <input id="edit-rating-hidden" type="hidden">
+                            <span class="editStar" data-edit-star="1">&#9733;</span>
+                            <span class="editStar" data-edit-star="2">&#9733;</span>
+                            <span class="editStar" data-edit-star="3">&#9733;</span>
+                            <span class="editStar" data-edit-star="4">&#9733;</span>
+                            <span class="editStar" data-edit-star="5">&#9733;</span>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            <div class="card-footer text-muted">
+                <button id="editMovieButton">Edit Movie</button>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-custom bg-custom">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+</div>
 
 <div class="main-container">
     <h2>General</h2>
@@ -35,62 +98,6 @@
     <section class="products">
         <div id="suspense-movies" class="container"></div>
     </section>
-</div>
-
-<!-- ADD A MOVIE CARD -->
-<ul class="card">
-    <div class="card-header">
-        <h2>Add A Movie!</h2>
-    </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item"><input type="text" id="movieNameInput" placeholder="Enter Movie Title"></li>
-        <li class="list-group-item"><input type="text" id="addMovieGenre" placeholder="Enter Genre"></li>
-        <li class="list-group-item"><input type="text" id="addMovieYear" placeholder="Enter Year"></li>
-        <li class="list-group-item"><label for="rating-hidden">How would you rate this movie?</label>
-            <div class="stars">
-                <form id="star-rating">
-                    <input id="rating-hidden" type="hidden">
-                    <span class="star" data-star="1">&#9733;</span>
-                    <span class="star" data-star="2">&#9733;</span>
-                    <span class="star" data-star="3">&#9733;</span>
-                    <span class="star" data-star="4">&#9733;</span>
-                    <span class="star" data-star="5">&#9733;</span>
-                </form>
-            </div>
-</ul>
-</li>
-</ul>
-<div class="card-footer text-muted">
-    <button id="newMovieButton">Add Movie</button>
-</div>
-</div>
-
-<!-- EDIT A MOVIE CARD -->
-<div class="card">
-    <div class="card-header">
-        <h2>Edit A Movie!</h2>
-    </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item"><input type="text" id="editMovieId" placeholder="Enter Movie ID"></li>
-        <li class="list-group-item"><input type="text" id="editMovieName" placeholder="Enter Movie Title"></li>
-        <li class="list-group-item"><input type="text" id="editMovieGenre" placeholder="Enter Genre"></li>
-        <li class="list-group-item"><input type="text" id="editMovieYear" placeholder="Enter Year"></li>
-        <li class="list-group-item"><label for="edit-rating-hidden">How would you rate this movie?</label>
-            <div class="stars">
-                <form id="edit-star-rating">
-                    <input id="edit-rating-hidden" type="hidden">
-                    <span class="editStar" data-edit-star="1">&#9733;</span>
-                    <span class="editStar" data-edit-star="2">&#9733;</span>
-                    <span class="editStar" data-edit-star="3">&#9733;</span>
-                    <span class="editStar" data-edit-star="4">&#9733;</span>
-                    <span class="editStar" data-edit-star="5">&#9733;</span>
-                </form>
-            </div>
-        </li>
-    </ul>
-    <div class="card-footer text-muted">
-        <button id="editMovieButton">Edit Movie</button>
-    </div>
 </div>
 
 
