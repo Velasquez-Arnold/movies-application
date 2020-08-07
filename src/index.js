@@ -1,4 +1,4 @@
-const genreList = ['Comedy', "Family", "Suspense"]
+const genreList = ['Comedy', "Family", "Suspense", "Drama", "Dark Comedy", "Action", "Cultural Reset", "Satire", "Romance", "Fantasy", "Mystery"]
 const $ = require('jquery');
 // const {deleteMovie} = require('./api.js');
 
