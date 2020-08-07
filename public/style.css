@@ -1,4 +1,5 @@
 html, body {
+    Font-Family: 'Ruda', Sans-Serif;
     height: 100%;
     background-color: #020120;
     /*background-color: white;*/
@@ -33,7 +34,7 @@ h2 {
 }
 
 .star-active {
-    color: orange;
+    color: #3377FC;
 }
 
 .editStar {
@@ -41,7 +42,7 @@ h2 {
 }
 
 .editStar-active {
-    color: orange;
+    color: #3377FC;
 }
 
 .trash-icon {
@@ -52,7 +53,9 @@ h2 {
     float: right;}
 
 ul {
-    list-style: none;}
+    list-style: none;
+    background-color: #90041F;
+}
 
 /*.card {*/
 /*margin-top:40px}*/
@@ -97,7 +100,7 @@ div.box {
 }
 
 .box:hover ~ .box {
-    transform: translateX(25%);
+    transform: translateX(15%);
 }
 
 /*.container .box:hover {*/
@@ -143,10 +146,25 @@ div.box {
 }
 
 .bg-custom {
-    background-color: #2032AB;
+    background-color: #B01434;
 }
 
 .card {
     width: 40%;
     display: flex;
+    background-color: #90041F;
+}
+
+.card {
+    width: 40%;
+    display: flex;
+    background-color: #90041F;
+}
+
+.list-group-flush {
+    background-color: #90041F;
+}
+
+.custom {
+    background-color: #B01434;
 }

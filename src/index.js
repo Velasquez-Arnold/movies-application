@@ -78,9 +78,9 @@ const renderMovies = function (genre) {
                  <div class="box cardimage" style="background-image: url(${image})">
                   <div class="cardoverlay"> 
                       <p> ${title}</p>
-                      <p> ${rating} </p>
-                      <p> ${genre}</p>
                       <p> ${year}</p>
+                      <p> ${genre}</p>
+                      <p> ${rating} </p>
                       <p><a href="#" class="deleteMovieButton" data-id="${id}"><img class="trash-icon" src="img/cute-trash-can.png" alt="cute lil trashcan"></a></p>
                   </div>
                   </div>
