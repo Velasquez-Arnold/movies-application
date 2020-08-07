@@ -27,6 +27,7 @@ h2 {
 .main-container {
     position: relative;
     text-align: center;
+
 }
 
 .star {
@@ -168,3 +169,9 @@ div.box {
 .custom {
     background-color: #B01434;
 }
+
+button.navbar-toggler {
+border: white;}
+
+div#general-movies.container {
+margin-right: 20px;}

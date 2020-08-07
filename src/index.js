@@ -51,6 +51,7 @@ const renderMovies = function (genre) {
                 moviesSection = idTag[3];
             }
             console.log(`id#${id} - ${title} - rating: ${rating}`);
+            // if Images is empty then it goes into OMDb to pull the poster image
             if (image === "") {
                 moviePoster(title)
                     .then(function (poster) {

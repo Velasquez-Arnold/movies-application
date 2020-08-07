@@ -129,7 +129,8 @@
     },
     {
       "title": "The Invisible Man",
-      "image": "https://m.media-amazon.com/images/M/MV5BZjFhM2I4ZDYtZWMwNC00NTYzLWE3MDgtNjgxYmM3ZWMxYmVmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "image": "./img/movies/the-invisible-man.jpg",
+
       "rating": "4",
       "genre": "Suspense",
       "year": "2020",
@@ -161,9 +162,9 @@
     },
     {
       "title": "Final Destination",
-      "image": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BZTI0NGM2OGYtNzVmMi00NGQ2LTk2MDAtN2RmYjIzMGRkZGYxXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
       "rating": "4",
-      "genre": "Horror",
+      "genre": "Suspense",
       "year": "2000",
       "id": 29
     },
@@ -184,11 +185,11 @@
       "id": 31
     },
     {
-      "title": "MA",
-      "image": "",
+      "title": "A Quiet Place",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_SX300.jpg",
       "rating": "4",
-      "genre": "Horror",
-      "year": "2019",
+      "genre": "Suspense",
+      "year": "2018",
       "id": 32
     },
     {
@@ -202,9 +203,9 @@
     {
       "id": 34,
       "title": "Ready or Not",
-      "image": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BYzBkMzAyMDUtZTFkZS00OWUyLTgwM2ItNGI3MTQ5NzA3NTVkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
       "rating": "4",
-      "genre": "Horror",
+      "genre": "Suspense",
       "year": "2002"
     },
     {
@@ -274,9 +275,9 @@
     {
       "id": 43,
       "title": "Hush",
-      "image": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BOWQ4OTdlODQtMDc3Yy00MGVmLWExYjUtOGI0Yjg4MDQzNDNhXkEyXkFqcGdeQXVyNjIzMzkyMzk@._V1_SX300.jpg",
       "rating": "4",
-      "genre": "Horror",
+      "genre": "Suspense",
       "year": "2016"
     },
     {
